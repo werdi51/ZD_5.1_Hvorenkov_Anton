@@ -1,0 +1,17 @@
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\pract5.csproj.AssemblyReference.cache
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\pract5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\WelcomePage.xaml.g.cs
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\MyStyles.css.g.cs
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\pract5.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\pract5.AssemblyInfo.cs
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\pract5.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\pract5.dll
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\refint\pract5.dll
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\pract5.pdb
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\bin\Debug\netstandard2.0\pract5.deps.json
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\bin\Debug\netstandard2.0\pract5.dll
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\bin\Debug\netstandard2.0\ref\pract5.dll
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\bin\Debug\netstandard2.0\pract5.pdb
+C:\Users\anton\Desktop\Новая папка (2)\pract5\pract5\obj\Debug\netstandard2.0\XamlC.stamp

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:pract5"
+            x:Class="pract5.MainPage"
+            BarBackgroundColor="#14ED2E"
+            BarTextColor="#342222">
+
+    <ContentPage Title="Кредитный калькулятор">
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+                <!-- Заголовок -->
+                <Label Text="Кредитный калькулятор" 
+                       FontSize="Large" 
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+
+                <!-- Поля ввода -->
+                <StackLayout Spacing="5">
+                    <Label Text="Сумма кредита:"/>
+                    <Entry x:Name="AmountEntry" 
+                           Keyboard="Numeric" 
+                           Placeholder="Введите сумму"
+                           TextChanged="OnCalculateClicked"/>
+
+                    <Label Text="Срок (месяцев):"/>
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Entry x:Name="TermEntry" 
+                               Keyboard="Numeric" 
+                               WidthRequest="100"
+                               TextChanged="OnCalculateClicked"/>
+                        <Slider x:Name="TermSlider" 
+                                Maximum="120" 
+                                Minimum="1" 
+                                Value="12"
+                                ValueChanged="TermSlider_ValueChanged"/>
+                    </StackLayout>
+
+                    <Label Text="Вид платежа:"/>
+                    <Picker x:Name="PaymentTypePicker"
+                            Title="Выберите тип платежа"
+                            SelectedIndexChanged="OnCalculateClicked">
+                        <Picker.Items>
+                            <x:String>Аннуитетный</x:String>
+                            <x:String>Дифференцированный</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Процентная ставка"
+                           x:Name="PercentStavka"/>
+                    <Slider x:Name="RateSlider" 
+                            Maximum="30" 
+                            Minimum="1" 
+                            Value="5"
+                            ValueChanged="RateSlider_ValueChanged"/>
+                </StackLayout>
+
+                <!-- Результаты расчета -->
+                <Frame BackgroundColor="RoyalBlue" CornerRadius="10" Padding="15">
+                    <StackLayout Spacing="10">
+                        <Label Text="Результаты расчета:" FontAttributes="Bold"/>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Ежемесячный платеж:"/>
+                            <Label x:Name="MonthlyPaymentLabel" Text="...." FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Общая сумма:"/>
+                            <Label x:Name="TotalPaymentLabel" Text="...." FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Переплата:"/>
+                            <Label x:Name="OverpaymentLabel" Text="...." FontAttributes="Bold"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Курсы валют">
+        <StackLayout Padding="20" Spacing="15">
+            <Label Text="Курсы валют" 
+                   FontSize="Large" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Frame BackgroundColor="RoyalBlue" CornerRadius="10" Padding="15">
+                <StackLayout Spacing="10">
+                    <Label Text="Центробанк РФ:" FontAttributes="Bold"/>
+                    <Label x:Name="UsdRateLabel" Text="USD: 80.000"/>
+                    <Label x:Name="EurRateLabel" Text="EUR: 86.000"/>
+
+                    <Label Text="Текущая дата:" FontAttributes="Bold" Margin="0,10,0,0"/>
+                    <Label x:Name="DateLabel"/>
+
+                    <DatePicker x:Name="CurrencyDatePicker"
+                                Format="dd/MM/yyyy"
+                                DateSelected="CurrencyDatePicker_DateSelected"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

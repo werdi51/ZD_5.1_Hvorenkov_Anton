@@ -1,0 +1,42 @@
+﻿^contentpage {
+    background-color: #2C2F33;
+}
+
+label {
+    font-size: 16;
+    color: white;
+}
+
+.input {
+    background-color: white;
+    color: black;
+    padding: 8;
+    font-size: 14;
+    border-width: 1;
+    border-color: gray;
+}
+
+.signinBtn {
+    background-color: #E53935;
+    color: white;
+    font-size: medium;
+    font-style: bold;
+    padding: 10;
+    border-radius: 4;
+}
+
+#header {
+    font-size: 22;
+    font-style: bold;
+    color: white;
+}
+
+.english {
+    font-weight: bold;
+    font-size: large;
+    color: darkblue;
+}
+
+.russian {
+    font-family: Verdana;
+}
